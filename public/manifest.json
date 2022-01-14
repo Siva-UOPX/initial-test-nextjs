@@ -1,11 +1,11 @@
 {
-  "theme_color": "#f69435",
-  "background_color": "#f69435",
+  "theme_color": "#000000",
+  "background_color": "#db3725",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "name": "JOB-RECOMMENDATION",
-  "short_name": "JOB-RECOMMENDATION",
+  "short_name": "My Career",
   "icons": [
       {
           "src": "/icon-192x192.png",
