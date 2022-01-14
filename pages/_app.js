@@ -9,7 +9,7 @@ const theme = createTheme({
     fontFamily: "Roboto",
     fontSize: "1rem",
     h1: {
-      fontWeight: 'bold'
+      fontWeight: "bold"
     }
   },
 });
@@ -24,11 +24,11 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <meta name='theme-color' content='#f69435' />
-        <link rel='icon' href='/icon-192x192.png' />
-        <link rel='manifest' href='/manifest.json' />
-        <link rel='apple-touch-icon' href='/icon-192x192.png' /> 
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#b21f13" />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon-192x192.png" /> 
+        <link rel="icon" href="/favicon.svg" />
         
         <link rel="apple-touch-icon" href="/ios-splash-screens/apple-icon-180.png"/>
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
