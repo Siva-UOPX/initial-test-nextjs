@@ -6,6 +6,10 @@ export default makeStyles((theme) => ({
     position: 'fixed',
     bottom: 0,
     width: '100%',
-    backgroundColor: '#DADADA',
+    backgroundColor: '#ffffff',
+    boxShadow: '0px 0px 2px'
   },
+  navLabel: {
+    fontSize: '1.2rem'
+  }
 }));

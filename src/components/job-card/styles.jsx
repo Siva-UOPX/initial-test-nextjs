@@ -5,10 +5,33 @@ export default makeStyles((theme) => ({
     padding: "15px",
     marginTop: "20px",
   },
+  detailViewHeader: {
+    display: "flex",
+    marginTop: "2rem",
+    gap:"3.5rem"
+    
+  },
+ 
+  nameLocation: {
+    margin: "5px  0px 8px 0px",
+  },
   bullet: {
-    listStyleType: "disc"
+    listStyleType: "disc",
+    fontSize:"1.4rem"
   },
   date: {
-    fontStyle: "italic"
-  }
+    fontStyle: "italic",
+  },
+  trophy: {
+    width: "22px",
+    height: "22px",
+    fill: "#db3725",
+    background: "#fcdbd7",
+    marginRight: "5px",
+    marginTop: "3px",
+  },
+  chip: {
+    width: "117px",
+    margin: "0px 15px 9px 0px",
+  },
 }));

@@ -1,5 +1,15 @@
+import { Container, Typography } from "@material-ui/core";
+
 const Resources = () => {
-    return <h1>My Resources</h1>
+    return (
+        <>
+          <Container style={{ padding: "20px" }}>
+            <Typography variant="h1" className="header">
+              Resources
+            </Typography>
+          </Container>
+        </>
+      );
 }
 
 export default Resources;

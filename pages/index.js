@@ -1,10 +1,15 @@
-import Tasks from "../src/components/checkbox/tasks";
+import { Container, Typography } from "@material-ui/core";
+import Tasks from "@/components/checkbox/tasks";
 
 export default function Home() {
   return (
     <>
-      <h1 style={{textAlign:"center"}}>My Plan</h1> 
-      <Tasks/>
+      <Container style={{ padding: "20px" }}>
+        <Typography variant="h1" className="header">
+          My Plan
+        </Typography>
+        <Tasks />
+      </Container>
     </>
   );
 }

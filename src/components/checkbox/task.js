@@ -1,35 +1,34 @@
-import React from 'react';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import {
+  FormGroup,
+  FormControlLabel,
+  Checkbox,
+  Typography,
+} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   div: {
     display: "flex",
     justifyContent: "center",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   button: {
     margin: theme.spacing(1),
     borderRadius: "5em",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   input: {
-    display: "none"
-  }
-}))
-
+    display: "none",
+  },
+}));
 
 export default function Task(props) {
-
   const classes = useStyles();
-
 
   return (
     <>
-      <FormGroup style={{ marginLeft: 22, margin: "auto" }} >
+      <FormGroup style={{ marginLeft: "22px", margin: "auto" }}>
         <FormControlLabel
           control={
             <Checkbox
@@ -40,11 +39,25 @@ export default function Task(props) {
               style={{ color: "#008563", padding: "1.5vh 10px" }}
             />
           }
-          label={<Typography style={props.value ? { textDecoration: "line-through" } : { textDecoration: "none" }}>{props.text}</Typography>}
-          style={{ border: "1px solid grey", marginBottom: "15px", width: "335px", borderRadius: "5px" }}
+          label={
+            <Typography
+              style={
+                props.value
+                  ? { textDecoration: "line-through" }
+                  : { textDecoration: "none" }
+              }
+            >
+              {props.text}
+            </Typography>
+          }
+          style={{
+            border: "1px solid grey",
+            marginBottom: "15px",
+            width: "335px",
+            borderRadius: "5px",
+          }}
         />
       </FormGroup>
     </>
-  )
-
+  );
 }

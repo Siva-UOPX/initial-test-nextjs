@@ -2,17 +2,9 @@ import Head from "next/head";
 import "../styles/globals.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import BottomNav from "../src/components/bottom-nav/BottomNav";
-import { ThemeProvider, createTheme } from "@material-ui/core";
-
-const theme = createTheme({
-  typography: {
-    fontFamily: "Roboto",
-    fontSize: "1rem",
-    h1: {
-      fontWeight: "bold"
-    }
-  },
-});
+import { ThemeProvider, createTheme, Container } from "@material-ui/core";
+import { RecoilRoot } from "recoil";
+import theme from "../src/theme";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -25,12 +17,12 @@ function MyApp({ Component, pageProps }) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
         <meta name="theme-color" content="#b21f13" />
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/icon-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/icon-192x192.png" /> 
+        <link rel="apple-touch-icon" href="/favicon.svg"/>
         <link rel="icon" href="/favicon.svg" />
         
-        <link rel="apple-touch-icon" href="/ios-splash-screens/apple-icon-180.png"/>
+        <link rel="apple-touch-icon" href="/favicon.svg"/>
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
         <link rel="apple-touch-startup-image" href="/ios-splash-screens/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/>
         <link rel="apple-touch-startup-image" href="/ios-splash-screens/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/>
@@ -63,9 +55,13 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <RecoilRoot>
+          <Container style={{ paddingBottom: "56px" }}>
+            <Component {...pageProps} />
+          </Container>
+        </RecoilRoot>
+        <BottomNav />
       </ThemeProvider>
-      <BottomNav />
     </>
   );
 }
