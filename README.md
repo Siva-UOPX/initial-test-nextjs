@@ -38,7 +38,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - For iPhone:
 
     To install the app on an iPhone use safari browser only, open the link and click on the bottom middle share icon, scroll down and select add to home screen. this will add the application to the device.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
