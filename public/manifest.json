@@ -1,16 +1,22 @@
 {
-    "theme_color": "#b21f13",
-    "background_color": "#f69435",
+    "theme_color": "#db3725",
+    "background_color": "#db3725",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Job Recommendation",
-    "short_name": "job-recommendation",
+    "name": "JOB-RECOMMENDATION",
+    "short_name": "MyCareers",
     "icons": [
         {
             "src": "/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
+        },
+        {
+            "src": "/maskable_icon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
         },
         {
             "src": "/icon-256x256.png",
@@ -26,6 +32,30 @@
             "src": "/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
-        }
+        },
+        {
+            "src": "/ios-splash-screens/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+          },
+          {
+            "src": "/ios-splash-screens/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+          },
+          {
+            "src": "/ios-splash-screens/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+          },
+          {
+            "src": "/ios-splash-screens/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
     ]
 }
