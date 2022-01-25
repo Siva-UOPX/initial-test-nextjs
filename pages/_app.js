@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#db3725" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/favicon.svg" /> 
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/icon-192x192.png" />
         
 
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
