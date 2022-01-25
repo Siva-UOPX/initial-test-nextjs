@@ -1,6 +1,6 @@
 {
     "theme_color": "#db3725",
-    "background_color": "#db3725",
+    "background_color": "linear-gradient(0deg, #b21f13 1%, #db3725 100% )",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
